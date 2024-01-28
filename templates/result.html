@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Data Result</title>
+    <style>
+        /* Add some basic styling for the grid */
+        .grid-container-top {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            text-align: center;
+            max-width: 500px;
+        }
+
+        .grid-container-bottom {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            text-align: center;
+            max-width: 500px;
+        }
+
+        /* Style for each grid item */
+        .grid-item {
+            border: 1px solid #ddd;
+            padding: 10px;
+            max-width: 500px;;
+        }
+\
+
+        /* Style for the parent container */
+        .parent-container {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h2>Travel Trumps</h2>
+    {% if error_message %}
+        <p>{{ error_message }}</p>
+    {% else %}
+    <div class="parent-container">
+        <div class="grid-container">
+            <div class="grid-item">
+                <strong>{{ city_info_1.city }}</strong>
+                <img src="{{ url_for('static', filename=city_info_1.image_path) }}" alt="{{ city_info_1.city }} Image" style="max-width: 100%; height: auto;">
+            </div>
+        </div>
+        <div class="grid-container-top">
+            <div class="grid-item">
+                <strong>Year Founded:</strong> {{ city_info_1.year_founded }}
+            </div>
+            <div class="grid-item">
+                <strong>Population:</strong> {{ "{:,}".format(city_info_1.population) }}
+            </div>
+        </div>
+        <div class="grid-container-bottom">
+            <div class="grid-item">
+                <strong>Elevation:</strong> {{ city_info_1.elevation }}
+            </div>
+            <div class="grid-item">
+                <strong>GMT:</strong> {{ city_info_1.gmt }}
+            </div>
+        </div>
+    </div>
+    <div class="parent-container">
+        <div class="grid-container">
+            <div class="grid-item">
+                <strong>{{ city_info_2.city }}</strong>
+                <img src="{{ url_for('static', filename=city_info_2.image_path) }}" alt="{{ city_info_2.city }} Image" style="max-width: 100%; height: auto;">
+            </div>
+        </div>
+        <div class="grid-container-top">
+            <div class="grid-item">
+                <strong>Year Founded:</strong> {{ city_info_2.year_founded }}
+            </div>
+            <div class="grid-item">
+                <strong>Population:</strong> {{ "{:,}".format(city_info_2.population) }}
+            </div>
+        </div>
+        <div class="grid-container-bottom">
+            <div class="grid-item">
+                <strong>Elevation:</strong> {{ city_info_2.elevation }}
+            </div>
+            <div class="grid-item">
+                <strong>GMT:</strong> {{ city_info_2.gmt }}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    <a href="/">Go back</a>
+</body>
+</html>
+

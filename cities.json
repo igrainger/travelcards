@@ -1,0 +1,74 @@
+[
+  {
+    "city": "London",
+    "year_founded": "43 AD",
+    "population": 8982256,
+    "elevation": 35,
+    "gmt": 0
+  },
+  {
+    "city": "Paris",
+    "year_founded": "3rd century BC",
+    "population": 2140526,
+    "elevation": 35,
+    "gmt": 1
+  },
+  {
+    "city": "Copenhagen",
+    "year_founded": "10th century",
+    "population": 794128,
+    "elevation": 13,
+    "gmt": 1
+  },
+  {
+    "city": "Bangkok",
+    "year_founded": "15th century",
+    "population": 8372806,
+    "elevation": 2,
+    "gmt": 7
+  },
+  {
+    "city": "Stockholm",
+    "year_founded": "13th century",
+    "population": 975904,
+    "elevation": 28,
+    "gmt": 1
+  },
+  {
+    "city": "Mexico City",
+    "year_founded": "14th century",
+    "population": 9209944,
+    "elevation": 2240,
+    "gmt": -6,
+    "image_path": "images/mexico.jpg"
+  },
+  {
+    "city": "Madrid",
+    "year_founded": "9th century",
+    "population": 3207247,
+    "elevation": 667,
+    "gmt": 1
+  },
+  {
+    "city": "Valencia",
+    "year_founded": "138 BC",
+    "population": 791413,
+    "elevation": 15,
+    "gmt": 1
+  },
+  {
+    "city": "Seville",
+    "year_founded": "8th century BC",
+    "population": 688711,
+    "elevation": 7,
+    "gmt": 1
+  },
+  {
+    "city": "Singapore",
+    "year_founded": "1819",
+    "population": 5708844,
+    "elevation": 15,
+    "gmt": 8,
+    "image_path": "images/singapore.jpg"
+  }
+]
